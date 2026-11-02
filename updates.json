@@ -3,6 +3,12 @@
     "pdf-selection-colors@peter.local": {
       "updates": [
         {
+          "version": "1.0.6",
+          "update_link": "https://raw.githubusercontent.com/PeterBenjaminZhu/zotero-pdf-selection-colors/main/pdf-selection-colors-1.0.6.xpi",
+          "update_hash": "sha256:a9ba9ba51a1298e88ebe979dc5210c9ea72b379265fe01d889942c6316a16263",
+          "applications": { "zotero": { "strict_min_version": "10.0", "strict_max_version": "10.*" } }
+        },
+        {
           "version": "1.0.5",
           "update_link": "https://raw.githubusercontent.com/PeterBenjaminZhu/zotero-pdf-selection-colors/main/pdf-selection-colors-1.0.5.xpi",
           "update_hash": "sha256:05202a7953985d4a93eae026bb6df386f084d5f63d72acd706eae259bafcc893",
@@ -12,6 +18,24 @@
               "strict_max_version": "10.*"
             }
           }
+        },
+        {
+          "version": "1.0.4",
+          "update_link": "https://raw.githubusercontent.com/PeterBenjaminZhu/zotero-pdf-selection-colors/main/pdf-selection-colors-1.0.4.xpi",
+          "update_hash": "sha256:6db29959b18e4ee075c8a354243b841b625aac82bde23660829f17abd3c18aac",
+          "applications": { "zotero": { "strict_min_version": "10.0.6", "strict_max_version": "10.0.7" } }
+        },
+        {
+          "version": "1.0.3",
+          "update_link": "https://raw.githubusercontent.com/PeterBenjaminZhu/zotero-pdf-selection-colors/main/pdf-selection-colors-1.0.3.xpi",
+          "update_hash": "sha256:37178ad8c11016bb4e32fa2df9b80255c31e96ce0946be0cc6b0135fd9cfcb3a",
+          "applications": { "zotero": { "strict_min_version": "10.0.6", "strict_max_version": "10.0.7" } }
+        },
+        {
+          "version": "1.0.2",
+          "update_link": "https://raw.githubusercontent.com/PeterBenjaminZhu/zotero-pdf-selection-colors/main/pdf-selection-colors-1.0.2.xpi",
+          "update_hash": "sha256:3139937e6644b85477b29a1da34d75d6cb7ecf97d1362e4cbfefe2d3bb0cfdc3",
+          "applications": { "zotero": { "strict_min_version": "10.0.6", "strict_max_version": "10.0.6" } }
         }
       ]
     }

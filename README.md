@@ -6,13 +6,13 @@ Customize temporary PDF text-selection colors in Zotero, with Everforest and Mor
 
 ## 兼容性
 
-- 当前版本：**1.0.5**。
+- 当前版本：**1.0.6**。
 - 允许安装和使用：**Zotero 10 系列**（`10.0` 至 `10.*`）。Zotero 10 内的小版本更新无需逐次发布适配包，遇到实际不兼容时再修复。
-- 当前 1.0.5 已在 Windows、Zotero 10.0.7 中完成实际 PDF 运行检查；历史版本在 10.0.6 中检查过。扩大允许使用的范围不代表已逐个验证 Zotero 10 的所有版本；macOS 与 Linux 尚未验证。Zotero 11 及其他主要版本需另行检查。
+- 1.0.6 已在 Windows、Zotero 10.0.7 中完成实际 PDF、旧安装包清理及重启检查；历史版本在 10.0.6 中检查过。扩大允许使用的范围不代表已逐个验证 Zotero 10 的所有版本；macOS 与 Linux 尚未验证。Zotero 11 及其他主要版本需另行检查。
 
 ## 下载与安装
 
-1. [下载 pdf-selection-colors-1.0.5.xpi](https://github.com/PeterBenjaminZhu/zotero-pdf-selection-colors/raw/refs/heads/main/pdf-selection-colors-1.0.5.xpi)，保存 `.xpi` 文件。
+1. [下载 pdf-selection-colors-1.0.6.xpi](https://github.com/PeterBenjaminZhu/zotero-pdf-selection-colors/raw/refs/heads/main/pdf-selection-colors-1.0.6.xpi)，保存 `.xpi` 文件。
 2. 在 Zotero 中打开 **工具 → 插件**。
 3. 点击齿轮按钮，选择 **Install Plugin From File… / 从文件安装插件**，选择下载的 `.xpi`。
 4. 安装后重新启动一次 Zotero。
@@ -32,6 +32,18 @@ Customize temporary PDF text-selection colors in Zotero, with Everforest and Mor
 版本信息：[updates.json](https://raw.githubusercontent.com/PeterBenjaminZhu/zotero-pdf-selection-colors/main/updates.json)。
 
 ## 使用
+
+### 更新后的旧安装包清理
+
+清理功能默认关闭。在 **工具 → PDF 选中底色… → 旧安装包清理** 中先选择独立的安装包目录，再启用功能。首次启用、修改目录或升级后，重新启动 Zotero，在实际 PDF 中选择文字并确认底色正常，然后点击 **检查安装包目录**。
+
+程序会按正式发布记录下载并校验当前版本安装包，显示待删除旧包的绝对路径、版本、大小和 SHA-256。核对后点击 **已确认 PDF 选择正常，开始清理**，永久删除清单中的旧安装包。每次清理均需确认。
+
+仅处理所选目录第一层、正式命名且内部插件 ID、版本和摘要全部匹配的旧安装包。当前版本、更高版本、其他插件、改名包、无法核验的文件和子目录均保留。程序拒绝符号链接和 Windows 目录重定向，也拒绝 Zotero profile、程序目录及磁盘根目录。
+
+当前包缺失时先补充并校验；已有同名包内容不同则停止。网络、权限、摘要或文件变化导致检查失败时，保留文件并显示具体原因。删除中途失败时停止后续操作，已经删除的文件及剩余清单写入本地记录；处理错误后须重新检查并确认。设置界面显示记录目录。清理失败单独报告，颜色功能继续运行。
+
+### 颜色设置
 
 打开 **工具 → PDF 选中底色…**。
 
@@ -70,6 +82,8 @@ Customize temporary PDF text-selection colors in Zotero, with Everforest and Mor
 
 1.0.5 将允许使用的范围扩大到 Zotero 10 系列，保留原有阅读器变化检查。在 Zotero 10.0.7 中完成 21 项实际运行检查，覆盖 PDF 临时选择、全部预设、自定义颜色、不透明度两种输入、恢复默认、深浅色选择处理、批注工具原色、已有批注保留、停用及重新启用，以及设置和自动更新保留。原有颜色和阅读功能保持不变。未重新覆盖全部历史检查场景；未使用画面截图评估视觉效果。
 
+1.0.6 在 Windows、Zotero 10.0.7 中完成 21 项真实 PDF 检查，以及隔离目录中的 16 项删除边界检查和 12 项异常检查。覆盖实际文件删除、只读权限失败、网络错误、文件变化、摘要不符及 Windows 目录重定向；正常重启后核对颜色、自动更新设置和主题文件保留。文件检查通过本机接口进行，PDF 检查通过真实阅读器对象和设置控件进行，未采集应用画面。其他操作系统和长期使用性能尚未验证。
+
 ## 文件与源码
 
 仓库提供安装包、使用说明、版本记录、校验文件和自动更新版本信息。`.xpi` 使用 ZIP 格式，包含插件的 JavaScript、界面、样式与配置文件，解压即可查看源码。
@@ -77,7 +91,7 @@ Customize temporary PDF text-selection colors in Zotero, with Everforest and Mor
 当前安装包 SHA-256：
 
 ```text
-05202a7953985d4a93eae026bb6df386f084d5f63d72acd706eae259bafcc893
+a9ba9ba51a1298e88ebe979dc5210c9ea72b379265fe01d889942c6316a16263
 ```
 
 ## 发布新版本
