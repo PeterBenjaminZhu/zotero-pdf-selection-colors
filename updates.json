@@ -3,13 +3,13 @@
     "pdf-selection-colors@peter.local": {
       "updates": [
         {
-          "version": "1.0.4",
-          "update_link": "https://raw.githubusercontent.com/PeterBenjaminZhu/zotero-pdf-selection-colors/main/pdf-selection-colors-1.0.4.xpi",
-          "update_hash": "sha256:6db29959b18e4ee075c8a354243b841b625aac82bde23660829f17abd3c18aac",
+          "version": "1.0.5",
+          "update_link": "https://raw.githubusercontent.com/PeterBenjaminZhu/zotero-pdf-selection-colors/main/pdf-selection-colors-1.0.5.xpi",
+          "update_hash": "sha256:05202a7953985d4a93eae026bb6df386f084d5f63d72acd706eae259bafcc893",
           "applications": {
             "zotero": {
-              "strict_min_version": "10.0.6",
-              "strict_max_version": "10.0.7"
+              "strict_min_version": "10.0",
+              "strict_max_version": "10.*"
             }
           }
         }
