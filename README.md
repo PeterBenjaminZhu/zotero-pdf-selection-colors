@@ -6,13 +6,13 @@ Customize temporary PDF text-selection colors in Zotero, with Everforest and Mor
 
 ## 兼容性
 
-- 当前版本：**1.0.2**。
-- 适用版本：**Zotero 10.0.6**，已在 Windows 上检查。
-- 安装包仅声明支持 Zotero 10.0.6。其他 Zotero 版本需要重新检查适配；macOS 与 Linux 尚未验证。
+- 当前版本：**1.0.3**。
+- 适用版本：**Zotero 10.0.6–10.0.7**。10.0.6 已在 Windows 上检查；1.0.3 在 10.0.7 上由使用者确认实际运行正常。
+- 安装包仅声明支持 Zotero 10.0.6–10.0.7。其他 Zotero 版本需要重新检查适配；macOS 与 Linux 尚未验证。
 
 ## 下载与安装
 
-1. [下载 pdf-selection-colors-1.0.2.xpi](https://github.com/PeterBenjaminZhu/zotero-pdf-selection-colors/raw/refs/heads/main/pdf-selection-colors-1.0.2.xpi)。请保存 `.xpi` 文件。
+1. [下载 pdf-selection-colors-1.0.3.xpi](https://github.com/PeterBenjaminZhu/zotero-pdf-selection-colors/raw/refs/heads/main/pdf-selection-colors-1.0.3.xpi)。请保存 `.xpi` 文件。
 2. 在 Zotero 中打开 **工具 → 插件**。
 3. 点击齿轮按钮，选择 **Install Plugin From File… / 从文件安装插件**，选择下载的 `.xpi`。
 4. 安装后重新启动一次 Zotero。
@@ -50,9 +50,11 @@ Customize temporary PDF text-selection colors in Zotero, with Everforest and Mor
 
 ## 检查范围与限制
 
-已检查单词、多行、跨段落及跨页选择、包含公式的正文、深色与临时白底页面、复制和取消选择、引用链接跳转、高亮和下划线原色、分屏、独立阅读窗口、另一篇论文、重启后的设置保留，以及停用恢复。
+1.0.2 在 Zotero 10.0.6 中已检查单词、多行、跨段落及跨页选择、包含公式的正文、深色与临时白底页面、复制和取消选择、引用链接跳转、高亮和下划线原色、分屏、独立阅读窗口、另一篇论文、重启后的设置保留，以及停用恢复。
 
-短距离翻页与选择处理对比未发现明显新增卡顿。检查基于本机现有公开论文，结果不能代表全部论文、缩放比例、设备或长时间使用情况；扫描 PDF 尚未检查。未覆盖其他插件的全部功能。
+上述检查中的短距离翻页与选择处理对比未发现明显新增卡顿。检查基于本机现有公开论文，结果不能代表全部论文、缩放比例、设备或长时间使用情况；扫描 PDF 尚未检查。未覆盖其他插件的全部功能。
+
+1.0.3 更新了支持版本声明与启动时的版本检查，由使用者在 Zotero 10.0.7 中确认实际运行正常；本次未重新执行上述全部检查。
 
 ## 文件与源码
 
@@ -61,7 +63,7 @@ Customize temporary PDF text-selection colors in Zotero, with Everforest and Mor
 安装包 SHA-256：
 
 ```text
-3139937e6644b85477b29a1da34d75d6cb7ecf97d1362e4cbfefe2d3bb0cfdc3
+37178ad8c11016bb4e32fa2df9b80255c31e96ce0946be0cc6b0135fd9cfcb3a
 ```
 
 ## 反馈
