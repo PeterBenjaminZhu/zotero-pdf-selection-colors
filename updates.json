@@ -1,0 +1,19 @@
+{
+  "addons": {
+    "pdf-selection-colors@peter.local": {
+      "updates": [
+        {
+          "version": "1.0.4",
+          "update_link": "https://raw.githubusercontent.com/PeterBenjaminZhu/zotero-pdf-selection-colors/main/pdf-selection-colors-1.0.4.xpi",
+          "update_hash": "sha256:6db29959b18e4ee075c8a354243b841b625aac82bde23660829f17abd3c18aac",
+          "applications": {
+            "zotero": {
+              "strict_min_version": "10.0.6",
+              "strict_max_version": "10.0.7"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

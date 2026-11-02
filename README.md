@@ -6,18 +6,30 @@ Customize temporary PDF text-selection colors in Zotero, with Everforest and Mor
 
 ## 兼容性
 
-- 当前版本：**1.0.3**。
+- 当前版本：**1.0.4**。
 - 适用版本：**Zotero 10.0.6–10.0.7**。10.0.6 已在 Windows 上检查；1.0.3 在 10.0.7 上由使用者确认实际运行正常。
 - 安装包仅声明支持 Zotero 10.0.6–10.0.7。其他 Zotero 版本需要重新检查适配；macOS 与 Linux 尚未验证。
 
 ## 下载与安装
 
-1. [下载 pdf-selection-colors-1.0.3.xpi](https://github.com/PeterBenjaminZhu/zotero-pdf-selection-colors/raw/refs/heads/main/pdf-selection-colors-1.0.3.xpi)。请保存 `.xpi` 文件。
+1. [下载 pdf-selection-colors-1.0.4.xpi](https://github.com/PeterBenjaminZhu/zotero-pdf-selection-colors/raw/refs/heads/main/pdf-selection-colors-1.0.4.xpi)，保存 `.xpi` 文件。
 2. 在 Zotero 中打开 **工具 → 插件**。
 3. 点击齿轮按钮，选择 **Install Plugin From File… / 从文件安装插件**，选择下载的 `.xpi`。
 4. 安装后重新启动一次 Zotero。
 
-无需修改 Zotero 安装文件或现有主题文件。插件采用手动下载安装包的更新方式，目前没有自动更新服务。
+升级保留已经保存的颜色和不透明度，无需修改现有主题文件。
+
+## 自动更新
+
+从 **1.0.4** 开始，插件使用 Zotero 自带的更新功能。版本信息和安装包由本 GitHub 仓库提供，更新时核对安装包的 SHA-256 校验值。
+
+首次安装 1.0.4 会开启此插件的自动更新。以后可以在 **工具 → 插件 → PDF 选中底色 → 详情** 中调整自动更新设置；插件会保留之后的手动选择。
+
+也可以通过插件管理中的 **Check for Updates / 检查更新** 主动检查。自动更新的检查和安装时间由 Zotero 安排；网络需要能够访问 GitHub 的文件下载服务。
+
+**1.0.3 及更早版本需要先手动安装一次 1.0.4**，之后即可通过 Zotero 获取本仓库发布的兼容版本。
+
+版本信息：[updates.json](https://raw.githubusercontent.com/PeterBenjaminZhu/zotero-pdf-selection-colors/main/updates.json)。
 
 ## 使用
 
@@ -54,17 +66,21 @@ Customize temporary PDF text-selection colors in Zotero, with Everforest and Mor
 
 上述检查中的短距离翻页与选择处理对比未发现明显新增卡顿。检查基于本机现有公开论文，结果不能代表全部论文、缩放比例、设备或长时间使用情况；扫描 PDF 尚未检查。未覆盖其他插件的全部功能。
 
-1.0.3 更新了支持版本声明与启动时的版本检查，由使用者在 Zotero 10.0.7 中确认实际运行正常；本次未重新执行上述全部检查。
+1.0.3 更新了支持版本声明与启动时的版本检查，由使用者在 Zotero 10.0.7 中确认实际运行正常；本次未重新执行上述全部检查。1.0.4 增加自动更新配置，配色及阅读功能文件与 1.0.3 一致。
 
 ## 文件与源码
 
-仓库提供安装包、使用说明、版本记录和校验文件。`.xpi` 使用 ZIP 格式，包含插件的 JavaScript、界面、样式与配置文件，解压即可查看源码。
+仓库提供安装包、使用说明、版本记录、校验文件和自动更新版本信息。`.xpi` 使用 ZIP 格式，包含插件的 JavaScript、界面、样式与配置文件，解压即可查看源码。
 
-安装包 SHA-256：
+当前安装包 SHA-256：
 
 ```text
-37178ad8c11016bb4e32fa2df9b80255c31e96ce0946be0cc6b0135fd9cfcb3a
+6db29959b18e4ee075c8a354243b841b625aac82bde23660829f17abd3c18aac
 ```
+
+## 发布新版本
+
+维护者发布新版时，应同时上传对应版本的安装包，并更新 `updates.json` 中的版本、下载地址、校验值和适用 Zotero 版本范围；同时更新 README、版本记录和 `SHA256SUMS`。仅上传安装包时，Zotero 不会发现新版本。已经发布的版本安装包应保留原文件内容。
 
 ## 反馈
 
